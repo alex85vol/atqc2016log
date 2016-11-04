@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="logouturl" value="http://registrator.herokuapp.com/logout"/>
+  <parameter name="number" value="2"/>
+  <parameter name="loginurl" value="http://registrator.herokuapp.com/login"/>
+  <parameter name="browserName" value="chrome"/>
+  <test name="Test(failed)">
+    <parameter name="number" value="2"/>
+    <classes>
+      <class name="com.softserve.edu.reg.ReportTest">
+        <methods>
+          <include name="testApp"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.softserve.edu.reg.ReportTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
